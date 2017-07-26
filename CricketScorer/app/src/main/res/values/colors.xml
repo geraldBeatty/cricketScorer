@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#379237</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <!-- Background color for the colors category -->
+    <color name="team_one">#c5e1a5</color>
+
+    <!-- Background color for the phrases category -->
+    <color name="team_two">#90CAF9</color>
+</resources>

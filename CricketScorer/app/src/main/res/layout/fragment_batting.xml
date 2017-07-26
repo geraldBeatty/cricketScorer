@@ -1,0 +1,542 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/team_one"
+    android:id="@+id/batting_view"
+    tools:context="com.example.rebeccaandgerald.cricketscorer.FirstTeamFragment">
+
+    <EditText
+        android:id="@+id/team_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:gravity="center_horizontal"
+        android:hint="@string/team"
+        android:imeOptions="actionDone"
+        android:padding="10dp"
+        android:singleLine="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/runs"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/runs_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="0"
+                android:textSize="50sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/wickets"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/wickets_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="0"
+                android:textSize="50sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+        <EditText
+            android:id="@+id/player_one"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:padding="8dp"
+            android:hint="@string/batsman_one"
+            android:singleLine="true"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:imeOptions="actionDone"/>
+
+        <Button
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.75"
+            android:id="@+id/one_run_one"
+            android:text="+1"
+            android:theme="@style/MyButton"
+            />
+
+        <Button
+            android:layout_width="0dp"
+            android:theme="@style/MyButton"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.75"
+            android:id="@+id/four_runs_one"
+            android:text="+4"
+            />
+
+        <Button
+            android:layout_width="0dp"
+            android:theme="@style/MyButton"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.75"
+            android:id="@+id/six_runs_one"
+            android:text="+6"
+            />
+
+        <Spinner
+            android:id="@+id/spin_one"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.35"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+        <EditText
+            android:id="@+id/player_two"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:padding="8dp"
+            android:hint="@string/batsman_two"
+            android:singleLine="true"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:imeOptions="actionDone"/>
+
+        <Button
+
+            android:layout_width="0dp"
+            android:theme="@style/MyButton"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.75"
+            android:id="@+id/one_run_two"
+            android:text="+1"
+            />
+
+        <Button
+            android:layout_width="0dp"
+            android:theme="@style/MyButton"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.75"
+            android:id="@+id/four_runs_two"
+            android:text="+4"
+            />
+
+        <Button
+            android:layout_width="0dp"
+            android:theme="@style/MyButton"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.75"
+            android:id="@+id/six_runs_two"
+            android:text="+6"
+            />
+
+        <Spinner
+            android:id="@+id/spin_two"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.35"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:padding="8dp"
+            android:text="@string/extras"
+            android:textSize="18sp"
+            />
+
+        <Button
+            android:id="@+id/extras_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.75"
+            android:theme="@style/MyButton"
+            android:text="+1" />
+
+        <View
+            android:id="@+id/edt_thief"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="2.75"
+            android:focusable="true"
+            android:focusableInTouchMode="true" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/batsman"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:gravity="center_horizontal"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/runs"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:text="@string/how_out"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/b_one_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/one"
+                    android:theme="@style/scoresheet" />
+
+                <TextView
+                    android:id="@+id/b_two_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/two"
+                    android:theme="@style/scoresheet" />
+
+                <TextView
+                    android:id="@+id/b_three_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/three"
+                    android:theme="@style/scoresheet" />
+
+                <TextView
+                    android:id="@+id/b_four_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/four"
+                    android:theme="@style/scoresheet" />
+
+                <TextView
+                    android:id="@+id/b_five_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/five"
+                    android:theme="@style/scoresheet" />
+
+                <TextView
+                    android:id="@+id/b_six_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/six"
+                    android:theme="@style/scoresheet" />
+
+                <TextView
+                    android:id="@+id/b_seven_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/seven"
+                    android:theme="@style/scoresheet" />
+
+                <TextView
+                    android:id="@+id/b_eight_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/eight"
+                    android:theme="@style/scoresheet" />
+
+                <TextView
+                    android:id="@+id/b_nine_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nine"
+                    android:theme="@style/scoresheet" />
+
+                <TextView
+                    android:id="@+id/b_ten_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ten"
+                    android:theme="@style/scoresheet" />
+
+                <TextView
+                    android:id="@+id/b_eleven_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/eleven"
+                    android:theme="@style/scoresheet" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/extras"
+                    android:theme="@style/scoresheet" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/b_one_runs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:theme="@style/scoresheet" />
+
+                <TextView
+                    android:id="@+id/b_two_runs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:theme="@style/scoresheet" />
+
+                <TextView
+                    android:id="@+id/b_three_runs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:theme="@style/scoresheet" />
+
+                <TextView
+                    android:id="@+id/b_four_runs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:theme="@style/scoresheet" />
+
+                <TextView
+                    android:id="@+id/b_five_runs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:theme="@style/scoresheet" />
+
+                <TextView
+                    android:id="@+id/b_six_runs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:theme="@style/scoresheet" />
+
+                <TextView
+                    android:id="@+id/b_seven_runs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:theme="@style/scoresheet" />
+
+                <TextView
+                    android:id="@+id/b_eight_runs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:theme="@style/scoresheet" />
+
+                <TextView
+                    android:id="@+id/b_nine_runs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:theme="@style/scoresheet" />
+
+                <TextView
+                    android:id="@+id/b_ten_runs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:theme="@style/scoresheet" />
+
+                <TextView
+                    android:id="@+id/b_eleven_runs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:theme="@style/scoresheet" />
+
+                <TextView
+                    android:id="@+id/extras"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:theme="@style/scoresheet" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/b_one_out"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:theme="@style/scoresheet" />
+
+                <TextView
+                    android:id="@+id/b_two_out"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:theme="@style/scoresheet" />
+
+                <TextView
+                    android:id="@+id/b_three_out"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:theme="@style/scoresheet" />
+
+                <TextView
+                    android:id="@+id/b_four_out"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:theme="@style/scoresheet" />
+
+                <TextView
+                    android:id="@+id/b_five_out"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:theme="@style/scoresheet" />
+
+                <TextView
+                    android:id="@+id/b_six_out"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:theme="@style/scoresheet" />
+
+                <TextView
+                    android:id="@+id/b_seven_out"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:theme="@style/scoresheet" />
+
+                <TextView
+                    android:id="@+id/b_eight_out"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:theme="@style/scoresheet" />
+
+                <TextView
+                    android:id="@+id/b_nine_out"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:theme="@style/scoresheet" />
+
+                <TextView
+                    android:id="@+id/b_ten_out"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:theme="@style/scoresheet" />
+
+                <TextView
+                    android:id="@+id/b_eleven_out"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:theme="@style/scoresheet" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
+
